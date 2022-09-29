@@ -45,15 +45,31 @@ function sumInput() {
   }
   return sum;
 }
-let salaries={
-"Jon":400,
-"Ivan":200,
-"Vova":100,
+let salaries = {
+  "Jon": 400,
+  "Ivan": 200,
+  "Vova": 100,
 }
-function sumSalaries(salaries){
-  let sum=0;
-  for(let i of Object.values(salaries)){
-    sum+=i;
+
+function sumSalaries(salaries) {
+  let sum = 0;
+  for (let i of Object.name(salaries)) {
+    sum += i;
   }
   return sum;
+}
+
+function topSalary(salaries) {
+
+  let max = 0;
+  let nameSal;
+
+  for (const [name, i] of Object.entries(salaries)) {
+    if (max < i) {
+      max = i;
+      nameSal = name;
+    }
+  }
+
+  return nameSal;
 }
