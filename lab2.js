@@ -21,3 +21,6 @@ function Accumulator(startingValue){
     }
   }
 }
+function random(min,max){
+  
+}
