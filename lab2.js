@@ -31,12 +31,18 @@ function extractCurrencyValue(str) {
   let result = str.replace(/[^0-9]/g, '');
   return result;
 }
-function sumInput(){
-  let mas=[];
-  while(true){
-let value =prompt('Введите чиселo');
-if (value == "" || value == undefined) break;
-mas.push(+value);
+
+function sumInput() {
+  let mas = [];
+  while (true) {
+    let value = prompt('Введите чиселo');
+    if (value == "" || value == undefined) break;
+    mas.push(+value);
   }
-  return mas;
+  let sum = 0;
+  for (let i of mas) {
+    sum += i;
+  }
+  return sum;
 }
+alert(sumInput())
