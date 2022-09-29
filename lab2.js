@@ -12,20 +12,31 @@ let calculator = {
     return this.first * this.second;
   }
 }
-function Accumulator(startingValue){
-  let object={
-    value:startingValue,
-    read(){
+
+function Accumulator(startingValue) {
+  let object = {
+    value: startingValue,
+    read() {
       let a = prompt('Какое число хотите прибавить ?');
-      this.value=this.value+a;
+      this.value = this.value + a;
     }
   }
 }
-function random(min,max){
+
+function random(min, max) {
   return Math.random() * (max - min) + min;
 }
-function extractCurrencyValue(str){
- let result = str.replace(/[^0-9]/g, '');
- return result;
+
+function extractCurrencyValue(str) {
+  let result = str.replace(/[^0-9]/g, '');
+  return result;
 }
-extractCurrencyValue('$400')
+function sumInput(){
+  let mas=[];
+  while(true){
+let value =prompt('Введите чиселo');
+if (value == "" || value == undefined) break;
+mas.push(+value);
+  }
+  return mas;
+}
