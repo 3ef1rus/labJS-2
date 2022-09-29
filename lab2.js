@@ -24,3 +24,8 @@ function Accumulator(startingValue){
 function random(min,max){
   return Math.random() * (max - min) + min;
 }
+function extractCurrencyValue(str){
+ let result = str.replace(/[^0-9]/g, '');
+ return result;
+}
+extractCurrencyValue('$400')
