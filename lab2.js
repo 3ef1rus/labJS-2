@@ -73,3 +73,9 @@ function topSalary(salaries) {
 
   return nameSal;
 }
+let sumA=function(a){
+  return function(b){
+    return a+b;
+  }
+}
+alert(sumA(2)(4))
