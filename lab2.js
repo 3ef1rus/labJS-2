@@ -45,4 +45,11 @@ function sumInput() {
   }
   return sum;
 }
-alert(sumInput())
+let salaries={
+"Jon":400,
+"Ivan":200,
+"Vova":100,
+}
+function sumSalaries(salaries){
+  salaries.values
+}
