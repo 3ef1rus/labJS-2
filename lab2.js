@@ -51,5 +51,9 @@ let salaries={
 "Vova":100,
 }
 function sumSalaries(salaries){
-  salaries.values
+  let sum=0;
+  for(let i of Object.values(salaries)){
+    sum+=i;
+  }
+  return sum;
 }
